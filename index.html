@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>탐정사무소 보드게임 상세페이지</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li class="boardgame">탐정 사무소</li>
+            <li class="airpod">남구 에어팟 케이스</li>
+            <li class="bambi">밤비 영어 책</li>
+        </ul>
+    </header>
+    <section class="container" id="section_container">
+        <div class="titleWrap" id="div_titleWrap">
+            <h2>이 사이트는 포트폴리오용 사이트입니다.</h2>
+        </div>
+        <div class="imgWrap">
+            <img src="./boardGame.jpg" alt="제품소개이미지">
+        </div>
+    </section>
+</body>
+<script>
+    $('li').on('click',function(){
+        switch($(this).attr('class')){
+            case 'boardgame' : 
+                $('.imgWrap > img').attr('src','./boardGame.jpg');
+                $('#section_container').removeClass('second');
+                $('#div_titleWrap').removeClass('second airpod bambi');
+                $('header').removeClass('second airpod bambi');
+            break;
+            case 'airpod' : 
+                $('.imgWrap > img').attr('src','./airpodCase.jpg');
+                $('#section_container').addClass('second');
+                $('#div_titleWrap').addClass('second airpod').removeClass('bambi');
+                $('header').addClass('airpod').removeClass('bambi');
+            break;
+            case 'bambi' : 
+                $('.imgWrap > img').attr('src','./bambiBook.jpg');
+                $('#section_container').addClass('second');
+                $('#div_titleWrap').addClass('second bambi').removeClass('airpod');
+                $('header').addClass('bambi').removeClass('airpod');
+            break;
+        }
+    });
+</script>
+</html>

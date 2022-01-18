@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #FFD200;
+}
+
+header ul {
+  text-align: center;
+}
+
+header ul li {
+  cursor: pointer;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  margin: 15px 30px;
+  font-size: 21px;
+  font-weight: 800;
+  color: white;
+  text-shadow: 2px 2px #3333;
+}
+
+header ul li:hover {
+  color: #333;
+  text-shadow: 2px 2px #eee;
+}
+
+header.airpod {
+  background-color: #2ca5fe;
+}
+
+header.bambi {
+  background-color: #ff8f23;
+}
+
+section.container {
+  width: 1024px;
+  position: relative;
+  left: 50%;
+  margin-left: -512px;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+
+section.container .titleWrap {
+  text-align: center;
+  width: 1024px;
+  height: 80px;
+  line-height: 80px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  word-spacing: 7px;
+  letter-spacing: -2px;
+  color: #FFD200;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+
+section.container.second {
+  width: 1200px;
+  margin-left: -600px;
+}
+
+section.container.second .titleWrap.second {
+  width: 1200px;
+}
+
+section.container.second .titleWrap.second.airpod {
+  color: #2ca5fe;
+}
+
+section.container.second .titleWrap.second.bambi {
+  color: #ff8f23;
+}
+/*# sourceMappingURL=index.css.map */
